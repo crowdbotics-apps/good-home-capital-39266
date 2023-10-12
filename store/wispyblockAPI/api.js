@@ -1,6 +1,6 @@
 import axios from "axios"
 const wispyblockAPI = axios.create({
-  baseURL: "https://wispy-block-39266.botics.co",
+  baseURL: "https://good-home-capital-39266.botics.co",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_docs_schema_retrieve(payload) {
