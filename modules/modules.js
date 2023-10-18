@@ -1,83 +1,118 @@
-import React, { useState } from 'react';
-import { SafeAreaView, View, Text, Button, FlatList, Image, StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
+import React from 'react';
+import { SafeAreaView, View, Text, Image, Button, ScrollView } from 'react-native';
 
-const CheckingAndSavingsScreen = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const dummyData = {
-    accounts: ['Checking', 'Savings', 'Investment'],
-    transactions: [{
-      id: '1',
-      type: 'Income',
-      amount: 2000
-    }, {
-      id: '2',
-      type: 'Expense',
-      amount: 500
-    }],
-    offers: ['Offer 1', 'Offer 2']
-  };
-  return <SafeAreaView style={styles.container}>
-      <Button title={isSidebarOpen ? 'Close Menu' : 'Open Menu'} onPress={() => setSidebarOpen(!isSidebarOpen)} />
-      {isSidebarOpen && <View style={styles.sidebar}>
-          {dummyData.accounts.map(account => <Text key={account}>{account}</Text>)}
-          <Button title="Add Account" onPress={() => {}} />
-        </View>}
-      <View style={styles.content}>
-        <Text style={styles.title}>Income and Expenses</Text>
-        <FlatList data={dummyData.transactions} renderItem={({
-        item
-      }) => <View style={styles.transaction}>
-              <Text>{item.type}</Text>
-              <Text>{item.amount}</Text>
-            </View>} keyExtractor={item => item.id} />
-        <Button title="Filter" onPress={() => {}} />
-        <Text style={styles.title}>Offers</Text>
-        {dummyData.offers.map(offer => <View style={styles.offer} key={offer}>
-            <Image style={styles.offerImage} source={{
+const CreditScoreScreen = () => {
+  return <SafeAreaView style={_styles.bTqpkqDR}>
+      <ScrollView>
+        <View style={_styles.tdhxqdMM}>
+          <Text style={_styles.yKpfvwgH}>Your Credit Score</Text>
+          <Text style={_styles.BPRloJaq}>750</Text>
+          <Image style={_styles.TpIuZIip} source={{
           uri: 'https://tinyurl.com/42evm3m3'
         }} />
-            <Text>{offer}</Text>
-          </View>)}
-      </View>
+        </View>
+        <View style={_styles.uqrzxpsb}>
+          <Text style={_styles.uAcPDNUz}>Loan Rates</Text>
+          <Text style={_styles.UcuEqUxb}>Current Rate: 3.5%</Text>
+          <Text style={_styles.crMgpDtS}>Potential Rate: 2.9%</Text>
+        </View>
+        <View style={_styles.XNgFitlI}>
+          <Text style={_styles.UOKzFAxe}>Pricing Details</Text>
+          <Text style={_styles.AMckIMuB}>Estimated Monthly Payment: $1,200</Text>
+          <Text style={_styles.GJOnUQuN}>Total Loan Amount: $200,000</Text>
+          <Text style={_styles.fjphFKRg}>Fees: $2,000</Text>
+        </View>
+        <View style={_styles.shawbkOt}>
+          <Button title="Accept Rates" onPress={() => {}} />
+        </View>
+        <View style={_styles.RWgkUwMt}>
+          <Text style={_styles.EldGHvcV}>Fees Breakdown</Text>
+          <Text style={_styles.yUlFWuMi}>Origination Fee: $500</Text>
+          <Text style={_styles.sbOCIqZg}>Application Fee: $200</Text>
+          <Text style={_styles.cPYOSSwr}>Other Fees: $1,300</Text>
+        </View>
+        <View style={_styles.UAMerRiI}>
+          <Button title="Back" onPress={() => {}} />
+        </View>
+      </ScrollView>
     </SafeAreaView>;
 };
 
-const styles = StyleSheet.create({
-  container: {
+export default CreditScoreScreen;
+
+const _styles = StyleSheet.create({
+  bTqpkqDR: {
     flex: 1,
-    padding: 10
+    backgroundColor: "#F5F5F5"
   },
-  sidebar: {
-    backgroundColor: '#f0f0f0',
-    padding: 10
+  tdhxqdMM: {
+    alignItems: "center",
+    padding: 20
   },
-  content: {
-    flex: 1,
-    padding: 10
+  yKpfvwgH: {
+    fontSize: 24,
+    fontWeight: "bold"
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginVertical: 10
+  BPRloJaq: {
+    fontSize: 48,
+    fontWeight: "bold",
+    color: "#4CAF50"
   },
-  transaction: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    padding: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: '#ddd'
+  TpIuZIip: {
+    width: 200,
+    height: 200,
+    margin: 20
   },
-  offer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    padding: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: '#ddd'
+  uqrzxpsb: {
+    padding: 20
   },
-  offerImage: {
-    width: 50,
-    height: 50,
-    marginRight: 10
+  uAcPDNUz: {
+    fontSize: 18,
+    fontWeight: "bold"
+  },
+  UcuEqUxb: {
+    fontSize: 16
+  },
+  crMgpDtS: {
+    fontSize: 16
+  },
+  XNgFitlI: {
+    padding: 20
+  },
+  UOKzFAxe: {
+    fontSize: 18,
+    fontWeight: "bold"
+  },
+  AMckIMuB: {
+    fontSize: 16
+  },
+  GJOnUQuN: {
+    fontSize: 16
+  },
+  fjphFKRg: {
+    fontSize: 16
+  },
+  shawbkOt: {
+    padding: 20
+  },
+  RWgkUwMt: {
+    padding: 20
+  },
+  EldGHvcV: {
+    fontSize: 18,
+    fontWeight: "bold"
+  },
+  yUlFWuMi: {
+    fontSize: 16
+  },
+  sbOCIqZg: {
+    fontSize: 16
+  },
+  cPYOSSwr: {
+    fontSize: 16
+  },
+  UAMerRiI: {
+    padding: 20
   }
 });
-export default CheckingAndSavingsScreen;
