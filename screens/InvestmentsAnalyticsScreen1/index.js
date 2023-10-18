@@ -17,33 +17,33 @@ const InvestmentsScreen = () => {
     balance: 7000,
     performance: '+10%'
   }];
-  return <SafeAreaView style={_styles.NWyUfqws}>
-      <View style={_styles.IvZXFIib}>
-        {sidebarOpen && <View style={_styles.MHoyvNWG}>
+  return <SafeAreaView style={_styles.ATvnhtYx}>
+      <View style={_styles.OGRdjdux}>
+        {sidebarOpen && <View style={_styles.bkfLmdtG}>
             <Text>Menu</Text>
           </View>}
-        <View style={_styles.mtSFLWFI}>
+        <View style={_styles.jVDBdNXP}>
           <TouchableOpacity onPress={() => setSidebarOpen(!sidebarOpen)}>
-            <Text style={_styles.buTTZgiG}>☰</Text>
+            <Text style={_styles.sLPAQowd}>☰</Text>
           </TouchableOpacity>
           <ScrollView>
-            {investments.map((investment, index) => <View key={index} style={_styles.FnydgWis}>
-                <Text style={_styles.OWJijULF}>{investment.name}</Text>
+            {investments.map((investment, index) => <View key={index} style={_styles.XUMgoqAo}>
+                <Text style={_styles.dAtNqBNj}>{investment.name}</Text>
                 <Text>Balance: ${investment.balance}</Text>
                 <Text>Performance: {investment.performance}</Text>
               </View>)}
-            <View style={_styles.BTGNdTNT}>
-              <Text style={_styles.UKGHBeDo}>Overall Portfolio</Text>
+            <View style={_styles.mPeAPWlv}>
+              <Text style={_styles.pMaNzVYt}>Overall Portfolio</Text>
               <Text>Total Value: ${investments.reduce((total, investment) => total + investment.balance, 0)}</Text>
             </View>
-            <View style={_styles.tmqfJubi}>
-              <Text style={_styles.BhHuilLC}>Balance Chart</Text>
-              <Image style={_styles.VbGcZoVX} source={{
+            <View style={_styles.uOFuZtaw}>
+              <Text style={_styles.egIATjUn}>Balance Chart</Text>
+              <Image style={_styles.fBDPgLrv} source={{
               uri: 'https://tinyurl.com/42evm3m3'
             }} />
             </View>
-            <View style={_styles.deKKPkQd}>
-              <Text style={_styles.iprTCvdG}>Recommended Products</Text>
+            <View style={_styles.FvHctDBZ}>
+              <Text style={_styles.GxwAwyfA}>Recommended Products</Text>
               <Text>Product 1</Text>
               <Text>Product 2</Text>
               <Text>Product 3</Text>
@@ -57,60 +57,60 @@ const InvestmentsScreen = () => {
 export default InvestmentsScreen;
 
 const _styles = StyleSheet.create({
-  NWyUfqws: {
+  ATvnhtYx: {
     flex: 1,
     backgroundColor: "#f5f5f5"
   },
-  IvZXFIib: {
+  OGRdjdux: {
     flex: 1,
     flexDirection: "row"
   },
-  MHoyvNWG: {
+  bkfLmdtG: {
     width: "20%",
     backgroundColor: "#fff",
     padding: 20
   },
-  mtSFLWFI: {
+  jVDBdNXP: {
     flex: 1,
     padding: 20
   },
-  buTTZgiG: {
+  sLPAQowd: {
     fontSize: 24
   },
-  FnydgWis: {
+  XUMgoqAo: {
     backgroundColor: "#fff",
     marginVertical: 10,
     padding: 20
   },
-  OWJijULF: {
+  dAtNqBNj: {
     fontSize: 18
   },
-  BTGNdTNT: {
+  mPeAPWlv: {
     backgroundColor: "#fff",
     marginVertical: 10,
     padding: 20
   },
-  UKGHBeDo: {
+  pMaNzVYt: {
     fontSize: 18
   },
-  tmqfJubi: {
+  uOFuZtaw: {
     backgroundColor: "#fff",
     marginVertical: 10,
     padding: 20
   },
-  BhHuilLC: {
+  egIATjUn: {
     fontSize: 18
   },
-  VbGcZoVX: {
+  fBDPgLrv: {
     width: "100%",
     height: 200
   },
-  deKKPkQd: {
+  FvHctDBZ: {
     backgroundColor: "#fff",
     marginVertical: 10,
     padding: 20
   },
-  iprTCvdG: {
+  GxwAwyfA: {
     fontSize: 18
   }
 });
