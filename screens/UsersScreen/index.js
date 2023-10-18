@@ -19,24 +19,24 @@ const UserScreen = () => {
 
   const renderItem = ({
     item
-  }) => <View style={_styles.wJpNxgOr}>
+  }) => <View style={_styles.JyKuIjlp}>
       <Image source={{
       uri: item.image
-    }} style={_styles.ZZlHDwcn} />
+    }} style={_styles.xYmGgNDZ} />
       <View>
         <Text>{item.name}</Text>
         <Text>{item.email}</Text>
       </View>
       <Text>{item.role}</Text>
       <Text>{item.status}</Text>
-      <TouchableOpacity style={_styles.zzAijsfG}>
-        <Text style={_styles.DjGNgUbG}>Edit</Text>
+      <TouchableOpacity style={_styles.CjzZTVxb}>
+        <Text style={_styles.LhRuLnds}>Edit</Text>
       </TouchableOpacity>
     </View>;
 
-  return <SafeAreaView style={_styles.nMcGnWef}>
-      <Text style={_styles.yLqyEVpT}>User Management</Text>
-      <TextInput placeholder="Search user" style={_styles.RZPmJkBP} />
+  return <SafeAreaView style={_styles.kjJSlsst}>
+      <Text style={_styles.sqpjQQta}>User Management</Text>
+      <TextInput placeholder="Search user" style={_styles.wdUGxqeF} />
       <FlatList data={users} renderItem={renderItem} keyExtractor={item => item.email} />
       <Button title="Add User" onPress={() => {}} />
     </SafeAreaView>;
@@ -45,7 +45,7 @@ const UserScreen = () => {
 export default UserScreen;
 
 const _styles = StyleSheet.create({
-  wJpNxgOr: {
+  JyKuIjlp: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -53,29 +53,29 @@ const _styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#ddd"
   },
-  ZZlHDwcn: {
+  xYmGgNDZ: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  zzAijsfG: {
+  CjzZTVxb: {
     backgroundColor: "#007BFF",
     padding: 10,
     borderRadius: 5
   },
-  DjGNgUbG: {
+  LhRuLnds: {
     color: "#fff"
   },
-  nMcGnWef: {
+  kjJSlsst: {
     flex: 1,
     padding: 20
   },
-  yLqyEVpT: {
+  sqpjQQta: {
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20
   },
-  RZPmJkBP: {
+  wdUGxqeF: {
     marginBottom: 20,
     padding: 10,
     borderWidth: 1,
