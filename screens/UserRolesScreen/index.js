@@ -16,19 +16,19 @@ const UserRolesScreen = () => {
     setRoleDescription('');
   };
 
-  return <SafeAreaView style={_styles.YwfHKYQJ}>
-      <View style={_styles.hPtJLTpr}>
-        <Text style={_styles.BdcLjacm}>User Roles</Text>
-        <TextInput style={_styles.VLGhgDsq} onChangeText={text => setRoleName(text)} value={roleName} placeholder="Role Name" />
-        <TextInput style={_styles.WWnUfWsi} onChangeText={text => setRoleDescription(text)} value={roleDescription} placeholder="Role Description" />
+  return <SafeAreaView style={_styles.JVArkocH}>
+      <View style={_styles.lBaGiZZD}>
+        <Text style={_styles.KVKmFGXh}>User Roles</Text>
+        <TextInput style={_styles.zaPcidek} onChangeText={text => setRoleName(text)} value={roleName} placeholder="Role Name" />
+        <TextInput style={_styles.orlNhLtE} onChangeText={text => setRoleDescription(text)} value={roleDescription} placeholder="Role Description" />
         <Button title="Add Role" onPress={addRole} />
         <FlatList data={roles} keyExtractor={(item, index) => index.toString()} renderItem={({
         item
-      }) => <View style={_styles.ZvZIttHb}>
-              <Text style={_styles.mrqZifmH}>{item.name}</Text>
+      }) => <View style={_styles.iiiAmEfR}>
+              <Text style={_styles.KaUeMZmN}>{item.name}</Text>
               <Text>{item.description}</Text>
-              <TouchableOpacity style={_styles.akqqXBHt}>
-                <Text style={_styles.InVjYsog}>Delete Role</Text>
+              <TouchableOpacity style={_styles.QUoEZWfp}>
+                <Text style={_styles.BsgPAmcE}>Delete Role</Text>
               </TouchableOpacity>
             </View>} />
       </View>
@@ -38,44 +38,44 @@ const UserRolesScreen = () => {
 export default UserRolesScreen;
 
 const _styles = StyleSheet.create({
-  YwfHKYQJ: {
+  JVArkocH: {
     flex: 1,
     backgroundColor: "#f5f5f5"
   },
-  hPtJLTpr: {
+  lBaGiZZD: {
     padding: 20
   },
-  BdcLjacm: {
+  KVKmFGXh: {
     fontSize: 24,
     fontWeight: "bold"
   },
-  VLGhgDsq: {
+  zaPcidek: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
     marginTop: 20
   },
-  WWnUfWsi: {
+  orlNhLtE: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
     marginTop: 20
   },
-  ZvZIttHb: {
+  iiiAmEfR: {
     marginTop: 20,
     backgroundColor: "#ddd",
     padding: 20
   },
-  mrqZifmH: {
+  KaUeMZmN: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  akqqXBHt: {
+  QUoEZWfp: {
     marginTop: 10,
     backgroundColor: "red",
     padding: 10
   },
-  InVjYsog: {
+  BsgPAmcE: {
     color: "white"
   }
 });
