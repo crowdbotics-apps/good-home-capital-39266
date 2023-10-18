@@ -3,43 +3,43 @@ import React from 'react';
 import { SafeAreaView, View, Text, Image, Button, ScrollView } from 'react-native';
 
 const LoansAnalyticsScreen = () => {
-  return <SafeAreaView style={_styles.IvfnmEHP}>
+  return <SafeAreaView style={_styles.IjQjDcDY}>
       <ScrollView>
-        <View style={_styles.RAFAQJCo}>
-          <Text style={_styles.MgmJWPyj}>Loans Analytics</Text>
-          <View style={_styles.CHZNYHXR}>
-            <Text style={_styles.qEWXpDnX}>Loan Payment Monitoring</Text>
+        <View style={_styles.bZOCRESv}>
+          <Text style={_styles.jlVoLXKj}>Loans Analytics</Text>
+          <View style={_styles.xbZIfxeW}>
+            <Text style={_styles.eiEoUaMw}>Loan Payment Monitoring</Text>
             <Text>Monitor your existing loan payments, schedules, due dates, and payment history.</Text>
           </View>
-          <View style={_styles.dregNRIM}>
-            <Text style={_styles.lYzOjJws}>Apply for New Loans</Text>
+          <View style={_styles.VzdxmaGo}>
+            <Text style={_styles.tqrHmLIP}>Apply for New Loans</Text>
             <Button title="Apply Now" onPress={() => {}} />
           </View>
-          <View style={_styles.UBwnLpJJ}>
-            <Text style={_styles.vGabXVVB}>Loan Quotes from Lenders</Text>
+          <View style={_styles.gsydnSqM}>
+            <Text style={_styles.enPQAViM}>Loan Quotes from Lenders</Text>
             <Text>Compare loan offers and select the most suitable option.</Text>
           </View>
-          <View style={_styles.THzECZdi}>
-            <Text style={_styles.CeFGBwOG}>Agent Profiles</Text>
-            <Image style={_styles.cpHbFYOZ} source={{
+          <View style={_styles.ohahrlnW}>
+            <Text style={_styles.FcnBswsk}>Agent Profiles</Text>
+            <Image style={_styles.YYJlakyd} source={{
             uri: 'https://tinyurl.com/42evm3m3'
           }} />
             <Text>Experience, expertise, and contact details of loan agents.</Text>
           </View>
-          <View style={_styles.WtJGsqMe}>
-            <Text style={_styles.UvwteVrX}>Pull-Through Rate Metrics</Text>
+          <View style={_styles.uFtMpmsq}>
+            <Text style={_styles.ITrYJtsu}>Pull-Through Rate Metrics</Text>
             <Text>Assess the success rate of loan applications from initial stages to funding.</Text>
           </View>
-          <View style={_styles.QUpCwCAy}>
-            <Text style={_styles.oJQvqDZq}>Review Rates and Closing Costs</Text>
+          <View style={_styles.PGDDJaXH}>
+            <Text style={_styles.iZeYtQqC}>Review Rates and Closing Costs</Text>
             <Text>Review interest rates, closing costs, and other financial details associated with loan offers.</Text>
           </View>
-          <View style={_styles.oaafIEVn}>
-            <Text style={_styles.VEyEyiVb}>Lock Rate Request</Text>
+          <View style={_styles.mPFLXpBC}>
+            <Text style={_styles.edbzQUmi}>Lock Rate Request</Text>
             <Button title="Lock Rate" onPress={() => {}} />
           </View>
-          <View style={_styles.HdwLRdHX}>
-            <Text style={_styles.rdLbyeGK}>Product and Service Recommendations</Text>
+          <View style={_styles.nPfUKCCQ}>
+            <Text style={_styles.GulndhQM}>Product and Service Recommendations</Text>
             <Text>Personalized product and service recommendations based on your financial objectives, interests, and spending patterns.</Text>
           </View>
         </View>
@@ -50,75 +50,75 @@ const LoansAnalyticsScreen = () => {
 export default LoansAnalyticsScreen;
 
 const _styles = StyleSheet.create({
-  IvfnmEHP: {
+  IjQjDcDY: {
     flex: 1,
     backgroundColor: "#f5f5f5"
   },
-  RAFAQJCo: {
+  bZOCRESv: {
     padding: 20
   },
-  MgmJWPyj: {
+  jlVoLXKj: {
     fontSize: 24,
     fontWeight: "bold"
   },
-  CHZNYHXR: {
+  xbZIfxeW: {
     marginTop: 20
   },
-  qEWXpDnX: {
+  eiEoUaMw: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  dregNRIM: {
+  VzdxmaGo: {
     marginTop: 20
   },
-  lYzOjJws: {
+  tqrHmLIP: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  UBwnLpJJ: {
+  gsydnSqM: {
     marginTop: 20
   },
-  vGabXVVB: {
+  enPQAViM: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  THzECZdi: {
+  ohahrlnW: {
     marginTop: 20
   },
-  CeFGBwOG: {
+  FcnBswsk: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  cpHbFYOZ: {
+  YYJlakyd: {
     width: 100,
     height: 100,
     borderRadius: 50
   },
-  WtJGsqMe: {
+  uFtMpmsq: {
     marginTop: 20
   },
-  UvwteVrX: {
+  ITrYJtsu: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  QUpCwCAy: {
+  PGDDJaXH: {
     marginTop: 20
   },
-  oJQvqDZq: {
+  iZeYtQqC: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  oaafIEVn: {
+  mPFLXpBC: {
     marginTop: 20
   },
-  VEyEyiVb: {
+  edbzQUmi: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  HdwLRdHX: {
+  nPfUKCCQ: {
     marginTop: 20
   },
-  rdLbyeGK: {
+  GulndhQM: {
     fontSize: 18,
     fontWeight: "bold"
   }
