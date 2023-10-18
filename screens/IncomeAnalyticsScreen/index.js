@@ -38,29 +38,29 @@ const IncomeAnalyticsScreen = () => {
       description: 'Secure your future with our plan'
     }]
   };
-  return <SafeAreaView style={_styles.yyHosXUG}>
-      <View style={_styles.GCVpgzzO}>
-        <Text style={_styles.hzvzTXiR}>Income Breakdown</Text>
+  return <SafeAreaView style={_styles.DRGTWnUt}>
+      <View style={_styles.IAQkpiwX}>
+        <Text style={_styles.DMJEkgLv}>Income Breakdown</Text>
         <FlatList data={dummyData.incomeSources} renderItem={({
         item
-      }) => <View style={_styles.imJhQyro}>
+      }) => <View style={_styles.lIbfaQvO}>
               <Text>{item.name}</Text>
               <Text>${item.amount}</Text>
             </View>} keyExtractor={item => item.id} />
 
-        <Text style={_styles.eBHxKnes}>Employment History</Text>
+        <Text style={_styles.GHFdEuul}>Employment History</Text>
         <FlatList data={dummyData.employmentHistory} renderItem={({
         item
-      }) => <View style={_styles.cxCxJeNl}>
+      }) => <View style={_styles.VpChaKkj}>
               <Text>{item.employer}</Text>
               <Text>{item.title}</Text>
               <Text>{item.duration}</Text>
             </View>} keyExtractor={item => item.id} />
 
-        <Text style={_styles.PAheovEs}>Offers</Text>
+        <Text style={_styles.UumkWSfi}>Offers</Text>
         <FlatList data={dummyData.offers} renderItem={({
         item
-      }) => <View style={_styles.RMdkxdHI}>
+      }) => <View style={_styles.FYdIMbXo}>
               <Text>{item.name}</Text>
               <Text>{item.description}</Text>
               <Button title="Explore" onPress={() => {}} />
@@ -72,36 +72,36 @@ const IncomeAnalyticsScreen = () => {
 export default IncomeAnalyticsScreen;
 
 const _styles = StyleSheet.create({
-  yyHosXUG: {
+  DRGTWnUt: {
     flex: 1,
     padding: 20
   },
-  GCVpgzzO: {
+  IAQkpiwX: {
     flex: 1
   },
-  hzvzTXiR: {
+  DMJEkgLv: {
     fontSize: 24,
     fontWeight: "bold"
   },
-  imJhQyro: {
+  lIbfaQvO: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginVertical: 10
   },
-  eBHxKnes: {
+  GHFdEuul: {
     fontSize: 24,
     fontWeight: "bold",
     marginTop: 20
   },
-  cxCxJeNl: {
+  VpChaKkj: {
     marginVertical: 10
   },
-  PAheovEs: {
+  UumkWSfi: {
     fontSize: 24,
     fontWeight: "bold",
     marginTop: 20
   },
-  RMdkxdHI: {
+  FYdIMbXo: {
     marginVertical: 10
   }
 });
